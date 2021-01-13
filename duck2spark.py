@@ -62,8 +62,8 @@ void loop()
 	# payload into FLASH memory of digispark
 	declare = "#define DUCK_LEN " + str(l) + "\nconst PROGMEM uint8_t duckraw [DUCK_LEN] = {\n\t"
 	for c in range(l - 1):
-		declare += str(hex(ord(payload[c]))) + ", "
-	declare += str(hex(ord(payload[l - 1]))) + "\n};\nint i = %d; //how many times the payload should run (-1 for endless loop)\n" % loop_count
+		declare += str(hex(payload[c])) + ", "
+	declare += str(hex(payload[l - 1])) + "\n};\nint i = %d; //how many times the payload should run (-1 for endless loop)\n" % loop_count
 	if blink:
 		declare += "bool blink=true;\n"
 	else:
