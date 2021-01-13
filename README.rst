@@ -33,7 +33,7 @@ Requirements
 * Arduino IDE has to be configured to program a DigiSpark, following this guide_
 * One, two or many DigiSparks ;-)
 * DuckEncoder_ to generate a raw payload from DuckyScript, if you want to stay away from Java use `my python port of DuckEncoder <https://github.com/mame82/duckencoder.py>`_
-* Python 2 installation
+* Python 3 installation
 
 .. _Arduino IDE: https://www.arduino.cc/en/main/software
 .. _guide: https://digistump.com/wiki/digispark/tutorials/connecting
